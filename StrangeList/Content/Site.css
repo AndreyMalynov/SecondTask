@@ -1,0 +1,145 @@
+﻿body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+div {
+}
+
+#tableBlock {
+    width: 80vw;
+    position: relative;
+    left: 10vw;
+}
+
+.content {
+    width: 80vw;
+}
+
+#editBlock {
+    float: right;
+}
+
+#createBlock {
+}
+
+#add-element-btn {
+    position: relative;
+    left: 10vw;
+    width: 80vw;
+}
+
+.overlay {
+    background-color: rgba(0, 0, 0, 0.7);
+    bottom: 0;
+    cursor: default;
+    left: 0;
+    opacity: 0;
+    position: fixed;
+    right: 0;
+    top: 0;
+    visibility: hidden;
+    z-index: 99999;
+    -webkit-transition: opacity .5s;
+    -moz-transition: opacity .5s;
+    -o-transition: opacity .5s;
+    transition: opacity .5s;
+}
+
+.popup {
+    background-color: #fff;
+    border: 3px solid #fff;
+    display: inline-block;
+    left: 50%;
+    opacity: 0;
+    padding: 15px;
+    width: 300px;
+    height: 323px;
+    position: fixed;
+    text-align: justify;
+    top: 40%;
+    visibility: hidden;
+    z-index: 999999;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    -webkit-transition: opacity .5s, top .5s;
+    -moz-transition: opacity .5s, top .5s;
+    -o-transition: opacity .5s, top .5s;
+    transition: opacity .5s, top .5s;
+    border-radius: 11px;
+}
+
+    .popup .close_window {
+        width: 6px;
+        height: 17px;
+        position: absolute;
+        padding: 1px 9px 4px 9px;
+        top: -15px;
+        right: -15px;
+        cursor: pointer;
+        color: #fff;
+        font-family: 'tahoma', sans-serif;
+        background: -webkit-gradient(linear, left top, right top, from(#DA1621), to(#FF000E));
+        background: -webkit-linear-gradient(top, #DA1621, #FF000E);
+        background: -moz-linear-gradient(top, #DA1621, #FF000E);
+        background: -o-linear-gradient(top, #DA1621, #FF000E);
+        background: linear-gradient(top, #DA1621, #FF000E);
+        background-color: #DA1621;
+        border: 1px solid #DA1621;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        border-radius: 50%;
+        text-align: center;
+        box-shadow: -1px 1px 3px rgba(0, 0, 0, 0.5);
+    }
+
+        .popup .close_window:hover {
+            background: -webkit-gradient(linear, left top, right top, from(#FF000E), to(#DA1621));
+            background: -webkit-linear-gradient(top, #FF000E, #DA1621);
+            background: -moz-linear-gradient(top, #FF000E, #DA1621);
+            background: -o-linear-gradient(top, #FF000E, #DA1621);
+            background: linear-gradient(top, #FF000E, #DA1621);
+            background-color: #DA1621;
+            border: 1px solid #DA1621;
+        }
+
+.edit-icon {
+    width: 2vw;
+    height: 2vw;
+    background: #fff url('edit.png') no-repeat center;
+    background-size: cover;
+    margin: 0 auto;
+    float: right;
+    cursor: pointer;
+}
+
+.delete-icon {
+    width: 2vw;
+    height: 2vw;
+    background: url('delete.png') no-repeat center;
+    background-size: cover;
+    margin: 0 auto;
+    cursor: pointer;
+}
+
+.delete-icon:hover {
+    opacity: 0.8;
+}
+.edit-icon:hover {
+    opacity: 0.8;
+}
+
+.demo-container .btn {
+    width: 100%;
+margin-top: 1rem;
+}
